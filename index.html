@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="viewport-fit" content="cover" />
+    <title>Doge Mafia Capos Legends - Greyhound Rescue</title>
+    <meta name="description" content="An Asian-themed NFT card game on Telegram where Mafiosos and Dragons battle. 30% of proceeds support greyhound rescue efforts worldwide." />
+    <meta name="author" content="Dogslution" />
+    <meta property="og:image" content="/og-image.png" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta property="og:url" content="https://www.dogslution.org" />
+    <meta property="og:title" content="Doge Mafia Capos Legends - Greyhound Rescue" />
+    <meta property="og:description" content="NFT card game on Telegram with 30% of proceeds supporting greyhound rescue. Original NFTs available on OpenSea." />
+    
+    <!-- Script para detectar Telegram WebApp y habilitar funcionalidades -->
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        // Comprobar si se está ejecutando dentro de Telegram WebApp
+        if (window.Telegram && window.Telegram.WebApp) {
+          const webApp = window.Telegram.WebApp;
+          webApp.ready();
+          webApp.expand();
+          
+          // Aplicar tema de color de Telegram
+          document.documentElement.style.setProperty('--background', webApp.themeParams.bg_color || '#121212');
+          document.documentElement.style.setProperty('--foreground', webApp.themeParams.text_color || '#ffffff');
+          document.documentElement.style.setProperty('--primary', webApp.themeParams.button_color || '#8B5CF6');
+          
+          console.log('Telegram WebApp initialized');
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
